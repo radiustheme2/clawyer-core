@@ -1,0 +1,121 @@
+
+.rtcl_fb_editor_wrap .rtcl-fb-repeater-wrap,
+#rtcl-form-builder .rtcl-fb-repeater-wrap {
+    padding: 0;
+    border-radius: 8px;
+    background-color: #ffffff;
+    border: 2px solid #e2e8f0;
+}
+.rtcl_fb_editor_wrap .rtcl-fb-repeater-wrap .rtcl-fb-field-group-label,
+#rtcl-form-builder .rtcl-fb-repeater-wrap .rtcl-fb-field-group-label {
+    width: 100%;
+    padding: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 22px;
+    margin-bottom: 0;
+    border-bottom: 2px solid #e2e8f0;
+}
+.rtcl_fb_editor_wrap .rtcl-fb-repeater-wrap .rtcl-fb-repeater-items,
+#rtcl-form-builder .rtcl-fb-repeater-wrap .rtcl-fb-repeater-items {
+    padding: 30px;
+}
+.rtcl_fb_editor_wrap .rtcl-fb-repeater-wrap .rtcl-fb-repeater-items .rtcl-fb-repeater-item,
+#rtcl-form-builder .rtcl-fb-repeater-wrap .rtcl-fb-repeater-items .rtcl-fb-repeater-item {
+    flex-flow: column;
+    position: relative;
+    border: 2px solid #e2e8f0;
+}
+.rtcl_fb_editor_wrap .rtcl-fb-repeater-wrap .rtcl-fb-repeater-items .rtcl-fb-repeater-item .rtcl-fb-field,
+#rtcl-form-builder .rtcl-fb-repeater-wrap .rtcl-fb-repeater-items .rtcl-fb-repeater-item .rtcl-fb-field {
+
+}
+.rtcl_fb_editor_wrap .rtcl-fb-repeater-wrap .rtcl-fb-repeater-items .rtcl-fb-repeater-item .rtcl-fb-field-label,
+#rtcl-form-builder .rtcl-fb-repeater-wrap .rtcl-fb-repeater-items .rtcl-fb-repeater-item .rtcl-fb-field-label {
+    margin: 0;
+    flex: 150px;
+    max-width: 150px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.rtcl_fb_editor_wrap .rtcl-fb-repeater-wrap .rtcl-fb-repeater-items .rtcl-fb-repeater-item .rtcl-fb-field-label .rtcl-field-icon,
+#rtcl-form-builder .rtcl-fb-repeater-wrap .rtcl-fb-repeater-items .rtcl-fb-repeater-item .rtcl-fb-field-label .rtcl-field-icon {
+    width: 40px ;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 4px;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    border: 2px solid #e2e8f0;
+}
+
+/* Show parent div and set width to 60px if only rtcl-field-icon exists */
+.rtcl_fb_editor_wrap .rtcl-fb-repeater-wrap .rtcl-fb-repeater-items .rtcl-fb-repeater-item .rtcl-fb-field-label:has(.rtcl-field-icon):not(:has(.rtcl-field-label)),
+#rtcl-form-builder .rtcl-fb-repeater-wrap .rtcl-fb-repeater-items .rtcl-fb-repeater-item .rtcl-fb-field-label:has(.rtcl-field-icon):not(:has(.rtcl-field-label)) {
+    flex: 60px;
+    max-width: 60px;
+}
+/* Show parent div and set width to 60px if only rtcl-field-icon exists */
+.rtcl_fb_editor_wrap .rtcl-fb-repeater-wrap .rtcl-fb-repeater-items .rtcl-fb-repeater-item .rtcl-fb-field-label:has(.rtcl-field-icon):not(:has(.rtcl-field-label)),
+#rtcl-form-builder .rtcl-fb-repeater-wrap .rtcl-fb-repeater-items .rtcl-fb-repeater-item .rtcl-fb-field-label:has(.rtcl-field-icon):not(:has(.rtcl-field-label)) {
+    flex: 60px;
+    max-width: 60px;
+}
+.rtcl_fb_editor_wrap .rtcl-fb-repeater-wrap .rtcl-fb-input-number,
+#rtcl-form-builder .rtcl-fb-repeater-wrap .rtcl-fb-input-number,
+.rtcl_fb_editor_wrap .rtcl-fb-repeater-wrap .rtcl-fb-input-select,
+#rtcl-form-builder .rtcl-fb-repeater-wrap .rtcl-fb-input-select,
+.rtcl_fb_editor_wrap .rtcl-fb-repeater-wrap .rtcl-fb-input-text,
+#rtcl-form-builder .rtcl-fb-repeater-wrap .rtcl-fb-input-text {
+    border: 2px solid #e2e8f0;
+}
+.rtcl_fb_editor_wrap .rtcl-fb-repeater-wrap .rtcl-fb-repeater-item-actions,
+#rtcl-form-builder .rtcl-fb-repeater-wrap .rtcl-fb-repeater-item-actions {
+    border: none;
+    padding: 0;
+    align-items: flex-end;
+}
+.rtcl_fb_editor_wrap .rtcl-fb-repeater-wrap span.anticon.anticon-plus-circle,
+#rtcl-form-builder .rtcl-fb-repeater-wrap span.anticon.anticon-plus-circle {
+    gap: 10px;
+    border-radius: 4px;
+    padding: 10px 20px;
+    display: inline-flex;
+    border: 2px solid #e2e8f0;
+}
+.rtcl_fb_editor_wrap .rtcl-fb-repeater-wrap span.anticon.anticon-plus-circle span.btn-text,
+#rtcl-form-builder .rtcl-fb-repeater-wrap span.anticon.anticon-plus-circle span.btn-text {
+    gap: 10px;
+    align-items: center;
+    display: inline-flex;
+}
+.rtcl_fb_editor_wrap .rtcl-fb-repeater-wrap span.anticon.anticon-plus-circle span.btn-text i,
+#rtcl-form-builder .rtcl-fb-repeater-wrap span.anticon.anticon-plus-circle span.btn-text i {
+    font-size: 20px;
+}
+.rtcl_fb_editor_wrap .rtcl-fb-repeater-wrap span.anticon.anticon-minus-circle,
+#rtcl-form-builder .rtcl-fb-repeater-wrap span.anticon.anticon-minus-circle {
+    top: -10px;
+    width: 25px;
+    color: #fff;
+    right: -10px;
+    height: 25px;
+    position: absolute;
+    border-radius: 100%;
+    background-color: red;
+}
+.rtcl_fb_editor_wrap .rtcl-fb-repeater-wrap span.anticon.anticon-minus-circle svg,
+#rtcl-form-builder .rtcl-fb-repeater-wrap span.anticon.anticon-minus-circle svg {
+    display: none;
+}
+.rtcl_fb_editor_wrap .rtcl-fb-repeater-wrap span.anticon.anticon-minus-circle:before,
+#rtcl-form-builder .rtcl-fb-repeater-wrap span.anticon.anticon-minus-circle:before {
+    top: 12px;
+    left: 8px;
+    font-size: 18px;
+    content: '\e81f';
+    position: absolute;
+    display: inline-flex;
+    font-family: 'rt-clawyer';
+}

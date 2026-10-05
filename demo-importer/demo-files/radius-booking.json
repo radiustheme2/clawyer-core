@@ -1,0 +1,967 @@
+{
+  "metadata": {
+    "plugin": "radius-booking",
+    "version": "1.0.16",
+    "exported_at": "2026-07-12T04:11:27+00:00",
+    "site_url": "https://www.radiustheme.com/demo/wordpress/themes/clawyer",
+    "modules": [
+      "settings",
+      "category",
+      "location",
+      "service",
+      "staff",
+      "customer",
+      "appointment"
+    ],
+    "counts": {
+      "settings": 50,
+      "category": 0,
+      "location": 0,
+      "service": 1,
+      "staff": 11,
+      "customer": 1,
+      "appointment": 1
+    }
+  },
+  "data": {
+    "settings": {
+      "exported_at": "2026-07-12 04:11:30",
+      "plugin_version": "1.0.16",
+      "settings": {
+        "auth": {
+          "useWordPressUsers": true,
+          "allowCustomerRegistration": true,
+          "requirePasswordOnRegister": true,
+          "removeLoginRegisterTabs": false,
+          "hideCreateAccountPrompt": false,
+          "mandatoryEmail": true
+        },
+        "bookingBuffer": {
+          "useServiceDuration": true,
+          "includeBufferTime": true
+        },
+        "business": {
+          "logoUrl": "https://www.radiustheme.com/demo/wordpress/themes/clawyer/wp-content/uploads/2024/08/light-logo.svg",
+          "companyName": "RadiusTheme",
+          "phone": "+8801254896300",
+          "address": "13, House- 42"
+        },
+        "cl_bookings_endpoint_flushed": [],
+        "cl_default_service_id": [],
+        "currency": {
+          "symbol": "USD",
+          "symbolPosition": "before",
+          "thousand": ",",
+          "decimal": ".",
+          "decimals": 2,
+          "hideBreakdownIfZero": true
+        },
+        "customSchedules": [],
+        "dateTime": {
+          "timeSystem": "12h",
+          "dateFormat": "m/d/Y",
+          "selectableInterval": 30,
+          "showAppointmentEndTime": true,
+          "verboseDates": false,
+          "numericMonth": true
+        },
+        "display": {
+          "frontendItemsPerPage": 10,
+          "backendItemsPerPage": 20,
+          "defaultBackendPage": "appointments",
+          "showClientTimezone": true,
+          "showAddToCalendar": true
+        },
+        "email_admin_new_appointment": [],
+        "email_admin_new_event": [],
+        "email_admin_new_meeting": [],
+        "email_customer_appointment_cancelled": [],
+        "email_customer_appointment_completed": [],
+        "email_customer_appointment_confirmed": [],
+        "email_customer_appointment_pending": [],
+        "email_customer_appointment_reminder": [],
+        "email_customer_event_registration_cancelled": [],
+        "email_customer_event_registration_confirmed": [],
+        "email_customer_event_reminder": [],
+        "email_customer_meeting_cancelled": [],
+        "email_customer_meeting_confirmed": [],
+        "email_customer_meeting_reminder": [],
+        "email_employee_appointment_cancelled": [],
+        "email_employee_appointment_confirmed": [],
+        "email_employee_appointment_pending": [],
+        "email_employee_appointment_reminder": [],
+        "email_employee_event_registration_cancelled": [],
+        "email_employee_event_registration_confirmed": [],
+        "email_employee_event_reminder": [],
+        "email_employee_meeting_cancelled": [],
+        "email_employee_meeting_confirmed": [],
+        "email_employee_meeting_reminder": [],
+        "email": {
+          "senderName": "Clawyer",
+          "senderEmail": "dev-email@wpengine.local",
+          "replyToEmail": ""
+        },
+        "formCustomization": {
+          "design": {
+            "primaryColor": "#debb67",
+            "secondaryColor": "#E2E8F0",
+            "backgroundColor": "#FFFFFF",
+            "textColor": "#323E5B",
+            "sidebarColor": "",
+            "stepButtonColor": "#00154C",
+            "stepButtonHoverColor": "#062576",
+            "borderColor": "#DAE0E5",
+            "fontFamily": "Inter, ui-sans-serif, system-ui",
+            "borderRadius": "0.75rem",
+            "sidebarImageUrl": "https://www.radiustheme.com/demo/wordpress/themes/clawyer/wp-content/uploads/2026/07/lawyer-fav.svg"
+          },
+          "labels": {
+            "services": {
+              "heading": "Easily book your appointments & Get the Service you deserve.",
+              "serviceLabel": "Which Service you want to take",
+              "locationLabel": "Location",
+              "staffLabel": "Choose a Staff",
+              "servicePlaceholder": "Select service",
+              "locationPlaceholder": "Select location",
+              "staffPlaceholder": "Select staff"
+            },
+            "datetime": {
+              "heading": "Date & Time Selection",
+              "subheading": "Select your appointment date and time",
+              "loadingText": "Loading available dates...",
+              "noAvailableText": "No available dates found"
+            },
+            "timeslot": {
+              "heading": "Available Time Slots",
+              "subheading": "Select your appointment date and time",
+              "loadingText": "Loading time slots...",
+              "noSlotsText": "No available time slots for the selected date.",
+              "bringingAnyoneLabel": "Bringing Anyone?",
+              "bringingAnyoneSubLabel": "Add extra people to your booking"
+            },
+            "details": {
+              "heading": "Customer Details",
+              "subheading": "Customer Information",
+              "fullNameLabel": "Full Name",
+              "fullNamePlaceholder": "Enter name here ...",
+              "phoneLabel": "Phone number",
+              "emailLabel": "E-mail",
+              "emailPlaceholder": "Enter e-mail...",
+              "noteLabel": "Note",
+              "notePlaceholder": "Add any additional notes..."
+            },
+            "payment": {
+              "heading": "Payment",
+              "subheading": "Payment Summary",
+              "summaryTitle": "Appointment summary"
+            },
+            "checkout": {
+              "heading": "Checkout",
+              "subheading": "Make your payment",
+              "paymentMethodTitle": "Payment method"
+            },
+            "confirmation": {
+              "heading": "Appointment Confirmed",
+              "subheading": "We Look Forward To Seeing You.",
+              "detailsTitle": "Appointment Details"
+            },
+            "sidebar": {
+              "summaryTitle": "Summary:",
+              "customerTitle": "Customer:",
+              "helpTitle": "Questions?",
+              "helpText": "Call %s for help"
+            }
+          },
+          "buttons": {
+            "nextText": "Next",
+            "backText": "Back",
+            "confirmText": "Continue",
+            "processingText": "Processing…"
+          },
+          "toggles": {
+            "showNoteField": true,
+            "showSidebar": true,
+            "showSidebarImage": true,
+            "showCalendarExport": true,
+            "allowBackNavigation": true
+          }
+        },
+        "holidays": [],
+        "integrations": {
+          "googleMapApiKey": "",
+          "ipLocateApiKey": "",
+          "redirectUrl": "",
+          "attachmentPath": "/wp-content/uploads/bookings",
+          "googleCalendar": {
+            "enabled": false,
+            "clientId": "",
+            "clientSecret": "",
+            "redirectUri": "https://www.radiustheme.com/demo/wordpress/themes/clawyer/wp-admin/admin.php?page=radius-booking",
+            "twoWaySync": false,
+            "syncOnCreate": true,
+            "syncOnUpdate": true,
+            "syncOnDelete": true,
+            "blockTimeSlots": false,
+            "calendarId": "primary",
+            "eventColor": "9",
+            "auth_url": "https://accounts.google.com/o/oauth2/v2/auth?response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcalendar+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcalendar.events&access_type=offline&prompt=consent&state=3b01e6705a",
+            "oauth_nonce": "3b01e6705a"
+          },
+          "classifiedListing": {
+            "enabled": true,
+            "listingMappingMode": "staff",
+            "autoCreateEmployee": true,
+            "defaultDuration": 60,
+            "defaultCategory": 0,
+            "defaultServiceName": "Consultation",
+            "syncPrice": true,
+            "syncDescription": true,
+            "bookNowButtonText": "Appointment Now",
+            "is_cl_active": true
+          }
+        },
+        "languages": [
+          "English",
+          "Assamese"
+        ],
+        "logic": {
+          "exclusiveLocation": true,
+          "singleLocationPerAgent": true
+        },
+        "modules": {
+          "service": true,
+          "meeting": false,
+          "event": false
+        },
+        "pages": {
+          "bookingFormPage": 6747,
+          "myBookingPage": 6748,
+          "meetingBookingPage": 6749,
+          "eventListingPage": 6750,
+          "eventRegistrationPage": 6751
+        },
+        "payment": {
+          "paypal": {
+            "enabled": false,
+            "testMode": true,
+            "liveClientId": "",
+            "liveSecretKey": "",
+            "testClientId": "",
+            "testSecretKey": ""
+          },
+          "offline": {
+            "enabled": true,
+            "label": "Pay at venue",
+            "instructions": "Please bring payment to your appointment. We accept cash, check, and credit cards."
+          }
+        },
+        "permissions": {
+          "multiServiceSameTimeslot": false
+        },
+        "phone": {
+          "showAllCountries": true,
+          "defaultCountry": "US",
+          "mandatory": false,
+          "validateIfRequired": true,
+          "rejectInvalidIfRequired": true,
+          "formatOnInput": false,
+          "showDialCode": true
+        },
+        "restrictions": {
+          "earliest": "+1 hour",
+          "latest": "+6 months",
+          "minCancelTime": "+24 hours",
+          "minRescheduleTime": "+12 hours",
+          "maxFutureBookingsPerCustomer": 0
+        },
+        "security": {
+          "enableRecaptcha": false,
+          "invisibleRecaptcha": true,
+          "recaptchaSiteKey": "",
+          "recaptchaSecretKey": ""
+        },
+        "serviceList": {
+          "layout": "grid",
+          "columns": 3,
+          "perPage": 9,
+          "showImage": true,
+          "showPrice": true,
+          "showDuration": true,
+          "showCategory": true,
+          "showDescription": true,
+          "showCategoryFilter": true,
+          "showStaff": true,
+          "buttonText": "Book Now",
+          "primaryColor": "#0040ff",
+          "cardRadius": "0.75rem"
+        },
+        "staffPermissions": {
+          "canEditService": true,
+          "canCreateService": false,
+          "canDeleteService": true,
+          "canManageStaff": true,
+          "canEditWorkSchedule": true
+        },
+        "statuses": {
+          "default": "pending",
+          "hiddenOnCalendar": [
+            "canceled"
+          ]
+        },
+        "weeklySchedule": {
+          "monday": {
+            "enabled": true,
+            "start": "09:00",
+            "end": "17:00"
+          },
+          "tuesday": {
+            "enabled": true,
+            "start": "09:00",
+            "end": "17:00"
+          },
+          "wednesday": {
+            "enabled": true,
+            "start": "09:00",
+            "end": "17:00"
+          },
+          "thursday": {
+            "enabled": true,
+            "start": "09:00",
+            "end": "17:00"
+          },
+          "friday": {
+            "enabled": true,
+            "start": "09:00",
+            "end": "17:00"
+          },
+          "saturday": {
+            "enabled": true,
+            "start": "09:00",
+            "end": "17:00"
+          },
+          "sunday": {
+            "enabled": true,
+            "start": "09:00",
+            "end": "17:00"
+          }
+        }
+      }
+    },
+    "category": [],
+    "location": [],
+    "service": [
+      {
+        "id": "1",
+        "name": "Consultation",
+        "description": "",
+        "color": "",
+        "price": 0,
+        "status": "visible",
+        "category_id": 0,
+        "min_capacity": 1,
+        "max_capacity": 1,
+        "duration": 3600,
+        "time_before": 0,
+        "time_after": 0,
+        "bringing_anyone": false,
+        "priority": "least_occupied",
+        "picture_full_path": "",
+        "picture_thumb_path": "",
+        "position": 0,
+        "is_visible": true,
+        "aggregated_price": true,
+        "settings": {
+          "general": {
+            "defaultStatus": "global",
+            "minBookingTime": "disabled",
+            "minCancelTime": "disabled",
+            "minRescheduleTime": "disabled",
+            "bookingAdvancePeriod": 365,
+            "redirectUrl": ""
+          },
+          "paymentMethods": {
+            "stripe": "",
+            "paypal": "",
+            "offline": 1
+          },
+          "integrations": {
+            "googleCalender": "",
+            "googleMeet": "",
+            "zoom": ""
+          }
+        },
+        "recurring_cycle": "disabled",
+        "recurring_sub": "future",
+        "recurring_payment": 0,
+        "deposit_payment": false,
+        "deposit_type": "fixed",
+        "deposit_per_person": false,
+        "deposit": 0,
+        "full_payment": false,
+        "mandatory_extra": false,
+        "min_selected_extras": 0,
+        "custom_pricing": "",
+        "max_extra_people": 0,
+        "limit_per_customer": null,
+        "translations": null,
+        "listing_id": 0,
+        "source_type": "classified_listing_default",
+        "created_at": "2026-06-08 12:24:03",
+        "updated_at": "2026-06-08 12:24:03"
+      }
+    ],
+    "staff": [
+      {
+        "id": "1",
+        "user_type": "employee",
+        "email": "demo@wpengine.local",
+        "status": "active",
+        "created_by": null,
+        "created_at": "2026-06-08 12:07:44",
+        "updated_at": "2026-06-08 12:07:44",
+        "profile": {
+          "user_id": "1",
+          "wp_user_id": "1",
+          "listing_id": null,
+          "source_type": "manual",
+          "first_name": "Parker",
+          "last_name": "Willy",
+          "phone": null,
+          "image_id": null,
+          "gender": "",
+          "time_zone": null,
+          "note": null,
+          "badge_id": null,
+          "location_id": null,
+          "translations": null,
+          "created_at": "2026-06-08 12:07:44",
+          "updated_at": "2026-06-08 12:07:44"
+        },
+        "services": [],
+        "days_off": [],
+        "weekdays": [],
+        "special_days": []
+      },
+      {
+        "id": "2",
+        "user_type": "employee",
+        "email": "alina_lawyer@gmail.com",
+        "status": "active",
+        "created_by": null,
+        "created_at": "2026-06-08 12:24:03",
+        "updated_at": "2026-06-08 12:24:03",
+        "profile": {
+          "user_id": "2",
+          "wp_user_id": "2",
+          "listing_id": "528",
+          "source_type": "classified_listing",
+          "first_name": "Floyd",
+          "last_name": "Miles",
+          "phone": null,
+          "image_id": "3719",
+          "gender": "",
+          "time_zone": null,
+          "note": null,
+          "badge_id": null,
+          "location_id": null,
+          "translations": null,
+          "created_at": "2026-06-08 12:24:03",
+          "updated_at": "2026-06-08 12:24:03"
+        },
+        "services": [
+          {
+            "user_id": "2",
+            "service_id": "1",
+            "price": 1200,
+            "min_capacity": 1,
+            "max_capacity": 1,
+            "custom_pricing": null,
+            "created_at": "2026-06-08 12:24:03",
+            "updated_at": "2026-06-08 12:24:03"
+          }
+        ],
+        "days_off": [],
+        "weekdays": [],
+        "special_days": []
+      },
+      {
+        "id": "3",
+        "user_type": "employee",
+        "email": "alina_lawyer@gmail.com",
+        "status": "active",
+        "created_by": null,
+        "created_at": "2026-06-08 12:25:14",
+        "updated_at": "2026-06-08 12:25:14",
+        "profile": {
+          "user_id": "3",
+          "wp_user_id": "2",
+          "listing_id": "519",
+          "source_type": "classified_listing",
+          "first_name": "Courtney",
+          "last_name": "Henry",
+          "phone": null,
+          "image_id": "3908",
+          "gender": "",
+          "time_zone": null,
+          "note": null,
+          "badge_id": null,
+          "location_id": null,
+          "translations": null,
+          "created_at": "2026-06-08 12:25:14",
+          "updated_at": "2026-06-08 12:25:14"
+        },
+        "services": [
+          {
+            "user_id": "3",
+            "service_id": "1",
+            "price": 1050,
+            "min_capacity": 1,
+            "max_capacity": 1,
+            "custom_pricing": null,
+            "created_at": "2026-06-08 12:25:14",
+            "updated_at": "2026-06-08 12:25:14"
+          }
+        ],
+        "days_off": [],
+        "weekdays": [],
+        "special_days": []
+      },
+      {
+        "id": "4",
+        "user_type": "employee",
+        "email": "alina_lawyer@gmail.com",
+        "status": "active",
+        "created_by": null,
+        "created_at": "2026-06-08 12:26:08",
+        "updated_at": "2026-06-08 12:26:08",
+        "profile": {
+          "user_id": "4",
+          "wp_user_id": "2",
+          "listing_id": "510",
+          "source_type": "classified_listing",
+          "first_name": "Wade",
+          "last_name": "Warren",
+          "phone": null,
+          "image_id": "3907",
+          "gender": "",
+          "time_zone": null,
+          "note": null,
+          "badge_id": null,
+          "location_id": null,
+          "translations": null,
+          "created_at": "2026-06-08 12:26:08",
+          "updated_at": "2026-06-08 12:26:08"
+        },
+        "services": [
+          {
+            "user_id": "4",
+            "service_id": "1",
+            "price": 500,
+            "min_capacity": 1,
+            "max_capacity": 1,
+            "custom_pricing": null,
+            "created_at": "2026-06-08 12:26:08",
+            "updated_at": "2026-06-08 12:26:08"
+          }
+        ],
+        "days_off": [],
+        "weekdays": [],
+        "special_days": []
+      },
+      {
+        "id": "5",
+        "user_type": "employee",
+        "email": "demo@wpengine.local",
+        "status": "active",
+        "created_by": null,
+        "created_at": "2026-06-08 12:29:24",
+        "updated_at": "2026-06-08 12:29:24",
+        "profile": {
+          "user_id": "5",
+          "wp_user_id": "1",
+          "listing_id": "502",
+          "source_type": "classified_listing",
+          "first_name": "Ronald",
+          "last_name": "Richards",
+          "phone": null,
+          "image_id": "3911",
+          "gender": "",
+          "time_zone": null,
+          "note": null,
+          "badge_id": null,
+          "location_id": null,
+          "translations": null,
+          "created_at": "2026-06-08 12:29:24",
+          "updated_at": "2026-06-08 12:29:24"
+        },
+        "services": [
+          {
+            "user_id": "5",
+            "service_id": "1",
+            "price": 700,
+            "min_capacity": 1,
+            "max_capacity": 1,
+            "custom_pricing": null,
+            "created_at": "2026-06-08 12:29:24",
+            "updated_at": "2026-06-08 12:29:24"
+          }
+        ],
+        "days_off": [],
+        "weekdays": [],
+        "special_days": []
+      },
+      {
+        "id": "6",
+        "user_type": "employee",
+        "email": "alina_lawyer@gmail.com",
+        "status": "active",
+        "created_by": null,
+        "created_at": "2026-06-08 12:29:32",
+        "updated_at": "2026-06-08 12:29:32",
+        "profile": {
+          "user_id": "6",
+          "wp_user_id": "2",
+          "listing_id": "496",
+          "source_type": "classified_listing",
+          "first_name": "Jenny",
+          "last_name": "Wilson",
+          "phone": null,
+          "image_id": "3913",
+          "gender": "",
+          "time_zone": null,
+          "note": null,
+          "badge_id": null,
+          "location_id": null,
+          "translations": null,
+          "created_at": "2026-06-08 12:29:32",
+          "updated_at": "2026-06-08 12:29:32"
+        },
+        "services": [
+          {
+            "user_id": "6",
+            "service_id": "1",
+            "price": 350,
+            "min_capacity": 1,
+            "max_capacity": 1,
+            "custom_pricing": null,
+            "created_at": "2026-06-08 12:29:32",
+            "updated_at": "2026-06-08 12:29:32"
+          }
+        ],
+        "days_off": [],
+        "weekdays": [],
+        "special_days": []
+      },
+      {
+        "id": "7",
+        "user_type": "employee",
+        "email": "alina_lawyer@gmail.com",
+        "status": "active",
+        "created_by": null,
+        "created_at": "2026-06-08 12:29:36",
+        "updated_at": "2026-06-08 12:29:36",
+        "profile": {
+          "user_id": "7",
+          "wp_user_id": "2",
+          "listing_id": "492",
+          "source_type": "classified_listing",
+          "first_name": "Kathryn",
+          "last_name": "Murphy",
+          "phone": null,
+          "image_id": "3915",
+          "gender": "",
+          "time_zone": null,
+          "note": null,
+          "badge_id": null,
+          "location_id": null,
+          "translations": null,
+          "created_at": "2026-06-08 12:29:36",
+          "updated_at": "2026-06-08 12:29:36"
+        },
+        "services": [
+          {
+            "user_id": "7",
+            "service_id": "1",
+            "price": 700,
+            "min_capacity": 1,
+            "max_capacity": 1,
+            "custom_pricing": null,
+            "created_at": "2026-06-08 12:29:36",
+            "updated_at": "2026-06-08 12:29:36"
+          }
+        ],
+        "days_off": [],
+        "weekdays": [],
+        "special_days": []
+      },
+      {
+        "id": "8",
+        "user_type": "employee",
+        "email": "alina_lawyer@gmail.com",
+        "status": "active",
+        "created_by": null,
+        "created_at": "2026-06-08 12:29:43",
+        "updated_at": "2026-06-08 12:29:43",
+        "profile": {
+          "user_id": "8",
+          "wp_user_id": "2",
+          "listing_id": "491",
+          "source_type": "classified_listing",
+          "first_name": "Robert",
+          "last_name": "Fox",
+          "phone": null,
+          "image_id": "5558",
+          "gender": "",
+          "time_zone": null,
+          "note": null,
+          "badge_id": null,
+          "location_id": null,
+          "translations": null,
+          "created_at": "2026-06-08 12:29:43",
+          "updated_at": "2026-06-08 12:29:43"
+        },
+        "services": [
+          {
+            "user_id": "8",
+            "service_id": "1",
+            "price": 1800,
+            "min_capacity": 1,
+            "max_capacity": 1,
+            "custom_pricing": null,
+            "created_at": "2026-06-08 12:29:43",
+            "updated_at": "2026-06-08 12:29:43"
+          }
+        ],
+        "days_off": [],
+        "weekdays": [],
+        "special_days": []
+      },
+      {
+        "id": "9",
+        "user_type": "employee",
+        "email": "alina_lawyer@gmail.com",
+        "status": "active",
+        "created_by": null,
+        "created_at": "2026-06-08 12:29:46",
+        "updated_at": "2026-06-08 12:29:46",
+        "profile": {
+          "user_id": "9",
+          "wp_user_id": "2",
+          "listing_id": "490",
+          "source_type": "classified_listing",
+          "first_name": "Cameron",
+          "last_name": "Williamson",
+          "phone": null,
+          "image_id": "5556",
+          "gender": "",
+          "time_zone": null,
+          "note": null,
+          "badge_id": null,
+          "location_id": null,
+          "translations": null,
+          "created_at": "2026-06-08 12:29:46",
+          "updated_at": "2026-06-08 12:29:46"
+        },
+        "services": [
+          {
+            "user_id": "9",
+            "service_id": "1",
+            "price": 1200,
+            "min_capacity": 1,
+            "max_capacity": 1,
+            "custom_pricing": null,
+            "created_at": "2026-06-08 12:29:46",
+            "updated_at": "2026-06-08 12:29:46"
+          }
+        ],
+        "days_off": [],
+        "weekdays": [],
+        "special_days": []
+      },
+      {
+        "id": "10",
+        "user_type": "employee",
+        "email": "alina_lawyer@gmail.com",
+        "status": "active",
+        "created_by": null,
+        "created_at": "2026-06-08 12:29:54",
+        "updated_at": "2026-06-08 12:29:54",
+        "profile": {
+          "user_id": "10",
+          "wp_user_id": "2",
+          "listing_id": "484",
+          "source_type": "classified_listing",
+          "first_name": "Ivanna",
+          "last_name": "Cain",
+          "phone": null,
+          "image_id": "5560",
+          "gender": "",
+          "time_zone": null,
+          "note": null,
+          "badge_id": null,
+          "location_id": null,
+          "translations": null,
+          "created_at": "2026-06-08 12:29:54",
+          "updated_at": "2026-06-08 12:29:54"
+        },
+        "services": [
+          {
+            "user_id": "10",
+            "service_id": "1",
+            "price": 120,
+            "min_capacity": 1,
+            "max_capacity": 1,
+            "custom_pricing": null,
+            "created_at": "2026-06-08 12:29:54",
+            "updated_at": "2026-06-08 12:29:54"
+          }
+        ],
+        "days_off": [],
+        "weekdays": [],
+        "special_days": []
+      },
+      {
+        "id": "11",
+        "user_type": "employee",
+        "email": "alina_lawyer@gmail.com",
+        "status": "active",
+        "created_by": null,
+        "created_at": "2026-06-08 12:31:31",
+        "updated_at": "2026-06-08 12:31:31",
+        "profile": {
+          "user_id": "11",
+          "wp_user_id": "2",
+          "listing_id": "462",
+          "source_type": "classified_listing",
+          "first_name": "Allan",
+          "last_name": "Barrett",
+          "phone": null,
+          "image_id": "5562",
+          "gender": "",
+          "time_zone": null,
+          "note": null,
+          "badge_id": null,
+          "location_id": null,
+          "translations": null,
+          "created_at": "2026-06-08 12:31:31",
+          "updated_at": "2026-06-08 12:31:31"
+        },
+        "services": [
+          {
+            "user_id": "11",
+            "service_id": "1",
+            "price": 500,
+            "min_capacity": 1,
+            "max_capacity": 1,
+            "custom_pricing": null,
+            "created_at": "2026-06-08 12:31:31",
+            "updated_at": "2026-06-08 12:31:31"
+          }
+        ],
+        "days_off": [],
+        "weekdays": [],
+        "special_days": []
+      }
+    ],
+    "customer": [
+      {
+        "id": "12",
+        "user_type": "customer",
+        "email": "techlabpro18@gmail.com",
+        "status": "active",
+        "created_by": null,
+        "created_at": "2026-06-09 04:10:24",
+        "updated_at": "2026-06-09 04:10:24",
+        "profile": {
+          "user_id": "12",
+          "wp_user_id": "3",
+          "listing_id": null,
+          "source_type": "manual",
+          "first_name": "Md",
+          "last_name": "Abdul Malek",
+          "phone": "+8801254896300",
+          "image_id": null,
+          "gender": "",
+          "time_zone": null,
+          "note": null,
+          "badge_id": null,
+          "location_id": null,
+          "translations": null,
+          "created_at": "2026-06-09 04:10:24",
+          "updated_at": "2026-06-09 04:10:24"
+        }
+      }
+    ],
+    "appointment": [
+      {
+        "id": "1",
+        "employee_id": 3,
+        "service_id": 1,
+        "appointment_date": "2026-06-18",
+        "start_time": "12:00:00",
+        "end_time": "13:00:00",
+        "status": "pending",
+        "location_id": null,
+        "notify_customer": "1",
+        "notes": "",
+        "cancellation_reason": null,
+        "parent_id": null,
+        "booking_type": "service_booking",
+        "meeting_type_id": 0,
+        "event_id": 0,
+        "created_at": "2026-06-09 04:10:24",
+        "updated_at": "2026-06-09 04:10:24",
+        "deleted_at": null,
+        "bookings": [
+          {
+            "appointment_id": "1",
+            "customer_id": "12",
+            "status": "confirmed",
+            "price": "1050",
+            "persons": "0",
+            "coupon_id": null,
+            "token": "9Si8oERFTH",
+            "customer_info": {
+              "first_name": "Md",
+              "last_name": "Abdul Malek",
+              "email": "techlabpro18@gmail.com",
+              "phone": "+8801254896300"
+            },
+            "custom_info": [],
+            "utc_offset": "0",
+            "duration": "3600",
+            "dynamic_pricing": null,
+            "created_at": "2026-06-09 04:10:24",
+            "updated_at": "2026-06-09 04:10:24",
+            "payment": {
+              "booking_id": "1",
+              "customer_id": "12",
+              "transaction_id": "",
+              "payment_method": "offline",
+              "amount": "0",
+              "total_amount": "1050",
+              "due_amount": "1050",
+              "status": "pending",
+              "booking_date_time": "2026-06-18 12:00:00",
+              "parent_id": null,
+              "booking_type": "service",
+              "invoice_id": null,
+              "paid_at": null,
+              "cancelled_at": null,
+              "coupon_id": null,
+              "coupon_code": null,
+              "discount_amount": "0",
+              "tax_rate": "0",
+              "tax_amount": "0",
+              "commission_rate": null,
+              "commission_type": null,
+              "created_at": "2026-06-09 04:10:24",
+              "updated_at": "2026-06-09 04:10:24"
+            }
+          }
+        ],
+        "integrations": []
+      }
+    ]
+  }
+}
