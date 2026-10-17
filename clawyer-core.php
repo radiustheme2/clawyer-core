@@ -3,7 +3,7 @@
 Plugin Name: Clawyer Core
 Plugin URI: https://www.radiustheme.com
 Description: Clawyer Theme Core Plugin
-Version: 1.2.1
+Version: 1.2.2
 Author: RadiusTheme
 Author URI: https://www.radiustheme.com
 Text Domain: clawyer-core
@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 if ( ! defined( 'CLAWYER_CORE' ) ) {
-	define( 'CLAWYER_CORE', '1.2.1' );
+	define( 'CLAWYER_CORE', '1.2.2' );
 	define( 'CLAWYER_ITEM', 'rt1224' );
 	define( 'CLAWYER_CORE_PREFIX', 'clawyer' );
 	define( 'CLAWYER_CORE_BASE_URL', plugin_dir_url( __FILE__ ) );
